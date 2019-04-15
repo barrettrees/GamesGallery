@@ -1,0 +1,91 @@
+
+/* Colors */
+body 	{ background-color: white;
+		  color: black;
+		  /*background-color: var(--navy); 
+		  color: white;*/ }
+hr 		{ background-color: white; }
+
+
+/* Font Sizes */
+body 	{ font-size: 18px; }
+p 		{ font-size: 90%; }
+h1		{ font-size: 5em; }
+h3		{ font-size: 200%; }
+#menu	{ font-size: 135%; }
+.byline { font-size: 160%; }
+
+body {
+	font-family: 'News Cycle', sans-serif;
+	font-weight: lighter;
+}
+hr {
+	margin: 50px;
+	border: none;
+	height: .5px;
+}
+h1 {
+	font-family: 'Barlow Condensed', sans-serif;
+	font-weight: bold;
+	letter-spacing: 0em;
+	
+	margin-bottom: 20px;
+}
+header>h1 {
+	line-height: 0.9;
+}
+.byline {
+	font-family: 'Wire One';
+	letter-spacing: 2px;
+	font-weight: normal;
+}
+h2 {
+	font-family: 'Wire One';
+	letter-spacing: 0.2em;
+}
+h4 { /* Game names */
+	font-family: 'Barlow Condensed', sans-serif;
+	font-weight: bold;
+	font-size: 250%;
+	letter-spacing: 0em;
+	font-weight: medium;
+	margin: 2px;
+	line-height: .9;
+	padding: 5px 0px;
+}
+footer {
+	color: darkgrey;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	text-align: center;
+	letter-spacing: 1.1px;
+}
+p {
+	font-family: Helvetica;
+}
+.sidenote {
+	font-family: serif;
+	font-style: italic;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+
+
+/* Rightward triangle. Only if screen is wide enough to have cards to the right of the menu. */
+@media only screen and (min-width: 580px) { 
+	a.active:after { 
+		width: 0; 
+		height: 0; 
+		content: ''; /* Otherwise the pseudo-element won't be created */
+		border-top: 13px solid transparent;
+		border-bottom: 13px solid transparent;
+		border-right: 10px solid transparent;
+		border-left: 10px solid var(--softblue);
+		position: absolute;
+		transform: translate(7px, -1.7px);
+		z-index: 2;
+	}
+}
+

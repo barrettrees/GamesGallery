@@ -1,0 +1,104 @@
+ 
+body {
+	/*margin-top: 100px;*/
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	width: 50vw;
+	justify-content: flex-start;
+	align-items: center;
+	background-color: whitesmoke;
+}
+
+.back {
+	font-family: 'Abel';
+	letter-spacing: 2px;
+	margin: 20px 0px;
+	width: 100%;
+	float: left;
+}
+.back:hover {
+	color: lightskyblue;
+}
+div.game-info {
+	margin: 50px 0px;
+	padding: 20px;
+	float: left;
+	background-color: white;
+	box-shadow: 0px 0px 50px lightgrey;
+}
+.game-description {}
+img.game-img {
+	width: 100%;
+	/*margin: 10px 0px;*/
+}
+h1 {
+	margin-top: 20px;
+	margin-bottom: 40px;
+	line-height: .9;
+}
+.byline {
+	margin: 20px 0px;
+	font-size: 200%;
+}
+.byline>a>img, .byline>img {
+	width: 20px;
+	padding: 0px 4px;
+	/*vertical-align: middle;*/
+}
+.button {
+	font-size: 18px;
+	letter-spacing: 2px;
+	font-family: 'Abel';
+	background-color: white;
+	color: black;
+	padding: 4px 10px;
+	border-radius: 3px;
+	vertical-align: bottom;
+	white-space: nowrap;
+	/*line-height: 2;*/
+	-webkit-transition-duration: 0.5s; /* Safari */
+	transition-duration: 0.5s;
+}
+.button:hover {
+	color: black;
+}
+.button.play {
+	background-color: lightgrey;
+	font-size: 150%;
+	letter-spacing: 7px;
+}
+.button.play:hover {
+	background-color: skyblue; 
+}
+.button.download {
+	font-size: smaller;
+	background-color: rgb(234,234,234);
+	text-decoration: underline;
+}
+.button.download:hover {
+	background-color: skyblue; 
+}
+a {
+	color: coral; 
+	-webkit-transition-duration: 0.5s; /* Safari */
+	transition-duration: 0.5s;
+}
+a:hover {
+	color: lightskyblue;
+}
+
+/* Mobile Layout */
+@media only screen and (max-width: 768px) { 
+	body {
+		width: 90vw;
+	}
+	div.game-info {
+		margin-top: 3vw;
+	}
+	img.game-img {
+		width: 100%;
+		height: unset;
+	}
+}
