@@ -1,178 +1,17 @@
 
 var games = [ 
 	{
-		name : "Palace Parkour",
-		platform : "Construct",
-		dir : "",
-		authors : [ "Ahri Zheng", "Yuda Kuang" ],
-		showSourceDownload : true,
-		description : ""
-	},{
-		name : "Dead Meat",
-		platform : "Construct",
-		dir : "",
-		authors : [ "Ash O'Farrell", "Ki" ],
+		name : "untitled",
+		platform : "Twine",
+		dir : "SebastianMoore",
+		authors : [ "Sebastian Moore" ],
 		showSourceDownload : false,
 		description : ""
 	},{
-		name : "Janitor Simulator",
-		platform : "Construct",
-		dir : "JanitorSimulator",
-		authors : [ "Ali Zeynalov" ],
-		showSourceDownload : false,
-		description : "<p>Work your shift as a janitor in a hotel lobby. Clean visitor’s footprints, pick up the trash that they throw on the ground, and water plants with a unique isometric view and original art.</p><p>Inspired by <i>Viscera Cleanup Detail</i> and <i>Two Point Hospital</i>.</p>"
-	},{
-		name : "Snungeon",
-		platform : "Construct",
-		dir : "Snungeon",
-		authors : [ "Ardent Eliot Reinhard", "Cam Miller", "Cecil Choi" ],
-		showSourceDownload : true,
-		description : ""
-	},{
-		name : "Girl Scout’s Guide to the Apocalypse",
-		platform : "Construct",
-		dir : "GirlScoutsGuide",
-		authors : [ "Ben Rowland", "Katie Moses" ],
-		showSourceDownload : true,
-		description : ""
-	},{
-		name : "Turkey Trot",
-		platform : "Construct",
-		dir : "TurkeyTrot",
-		authors : [ "Brandon Leung" ],
-		showSourceDownload : true,
-		description : ""
-	},{
-		name : "Boomstick",
-		platform : "Construct",
-		dir : "Boomstick",
-		authors : [ "Steven Huang", "Brandon Erickson" ],
-		showSourceDownload : false,
-		description : ""
-	},{
-		name : "Trichromacy",
-		platform : "Construct",
-		dir : "",
-		authors : [ "Daniel Aughenbaugh", "Colin O’Rourke" ],
-		showSourceDownload : false,
-		description : ""
-	},{
-		name : "Where’s my fishin’ son?",
-		platform : "Construct",
-		dir : "WheresMyFishinSon",
-		authors : [ "Joel M." ],
-		showSourceDownload : true,
-		description : ""
-	},{
-		name : "Stretched Thin",
-		platform : "Construct",
-		dir : "StretchedThin",
-		authors : [ "Lauren Fowlkes" ],
-		showSourceDownload : false,
-		description : ""
-	},{
-		name : "Flag Finders",
-		platform : "Construct",
-		dir : "FlagFinders",
-		authors : [ "Brady Moore" ],
-		showSourceDownload : true,
-		description : ""
-	},{
-		name : "Dungeon Master",
-		platform : "Construct",
-		dir : "DungeonMaster",
-		authors : [ "Eric Huang" ],
-		showSourceDownload : true,
-		description : ""
-	},{
-		name : "Demon Conqueror",
-		platform : "Construct",
-		dir : "",
-		authors : [ "Cheryl Kulkarni" ],
-		showSourceDownload : true,
-		description : ""
-	},{
-		name : "Run Slug Run!",
-		platform : "Construct",
-		dir : "RunSlugRun",
-		authors : [ "Simran Gunsi", "Isha Sethi " ],
-		showSourceDownload : true,
-		description : ""
-	},{
-		name : "Instrumental",
-		platform : "Construct",
-		dir : "Instrumental",
-		authors : [ "Jimmy Lujan", "Laura Britt", "Gabrielle Serna" ],
-		showSourceDownload : true,
-		description : ""
-	},{
-		name : "Stella",
-		platform : "Construct",
-		dir : "Stella",
-		authors : [ "Emily Ye" ],
-		showSourceDownload : true,
-		description : ""
-	},{
-		name : "UGLY",
-		platform : "Construct",
-		dir : "UGLY",
-		authors : [ "Margaret Patrick", "Austin Brägger", "Shun Xu" ],
-		showSourceDownload : false,
-		description : ""
-	},{
-		name : "Last Game",
-		platform : "Construct 2",
-		dir : "LastGame",
-		authors : [ "Allen Aboytes" ],
-		showSourceDownload : true,
-		description : ""
-	},{
-		name : "The Last Stand",
-		platform : "Construct",
-		dir : "LastStand",
-		authors : [ "Charles Advincula", "Cole Watts" ],
-		showSourceDownload : true,
-		description : ""
-	},{
-		name : "Addiction",
-		platform : "Construct",
-		dir : "Addiction",
-		authors : [ "Fion Kwok", "Darren Yang" ],
-		showSourceDownload : false,
-		description : ""
-	},{
-		name : "Traveling Bullet",
-		platform : "Construct",
-		dir : "",
-		authors : [ "Quan Gao", "Bo Yang", "Naixin Lou" ],
-		showSourceDownload : true,
-		description : ""
-	},{
-		name : "X-Acto Neon",
-		platform : "Construct",
-		dir : "xActoNeon",
-		authors : [ "Daniel Liao", "Terence So", "Alex Lau" ],
-		showSourceDownload : true,
-		description : ""
-	},{
-		name : "Some Assembly Required​",
-		platform : "Construct",
-		dir : "",
-		authors : [ "Carlos Cisneros", "Cedric Tomaschke" ],
-		showSourceDownload : true,
-		description : ""
-	},{
-		name : "Island",
-		platform : "Construct",
-		dir : "",
-		authors : [ "Teng Ma" ],
-		showSourceDownload : false,
-		description : ""
-	},{
-		name : "Dog at the Beach",
-		platform : "GameMaker Studio",
-		dir : "",
-		authors : [ "Georgio Klironomos", "Terrence Dubois", "Milo Lynch" ],
+		name : "Bitter Pill",
+		platform : "Twine",
+		dir : "BitterPill",
+		authors : [ "Margaret Patrick" ],
 		showSourceDownload : false,
 		description : ""
 	},{
@@ -183,34 +22,6 @@ var games = [
 		showSourceDownload : true,
 		description : ""
 	},{
-		name : "Bling Night",
-		platform : "Twine",
-		dir : "BlingNight",
-		authors : [ "Ahri Zheng" ],
-		showSourceDownload : true,
-		description : ""
-	},{
-		name : "Sluggy <--check",
-		platform : "Twine",
-		dir : "",
-		authors : [ "Ash O'Farrell" ],
-		showSourceDownload : true,
-		description : ""
-	},{
-		name : "untitled",
-		platform : "Twine",
-		dir : "AliZeynalov",
-		authors : [ "Ali Zeynalov" ],
-		showSourceDownload : true,
-		description : ""
-	},{
-		name : "Gangsters in Space",
-		platform : "Twine",
-		dir : "GangstersInSpace",
-		authors : [ "Ben Rowland" ],
-		showSourceDownload : true,
-		description : ""
-	},{
 		name : "Eyes",
 		platform : "Twine",
 		dir : "Eyes",
@@ -218,116 +29,95 @@ var games = [
 		showSourceDownload : true,
 		description : ""
 	},{
-		name : "untitled",
-		platform : "Twine",
-		dir : "StevenHuang",
-		authors : [ "Steven Huang" ],
+		name : "Super Space Dance Battle Deluxe",
+		platform : "Construct",
+		dir : "SuperSpaceDanceBattleDeluxe",
+		authors : [ "Kyle Fegan" ],
+		showSourceDownload : false,
+		description : ""
+	},{
+		name : "Yami",
+		platform : "Construct",
+		dir : "Yami",
+		authors : [ "Kan Wen" ],
+		showSourceDownload : false,
+		description : ""
+	},{
+		name : "Snungeon",
+		platform : "Construct",
+		dir : "Snungeon",
+		authors : [ "Ardent Eliot Reinhard", "Cam Miller", "Cecil Choi" ],
+		showSourceDownload : true,
+		description : "<p>It's a snail dungeon! A goofy, lighthearted dungeon-crawler about a cute, queer snail hero (\"snero\") in shorts and a t-shirt. Designed to be a friendly, easy to play, and short but complete experience. Featuring all original pixelart, chiptune-inspired themes, and voiced sound effects. Inspired by <i>The Legend of Zelda</i>.</p>"
+	},{
+		name : "Janitor Simulator",
+		platform : "Construct",
+		dir : "JanitorSimulator",
+		authors : [ "Ali Zeynalov" ],
+		showSourceDownload : false,
+		description : "<p>Work your shift as a janitor in a hotel lobby. Clean visitor’s footprints, pick up the trash that they throw on the ground, and water plants with a unique isometric view and original art.</p><p>Inspired by <i>Viscera Cleanup Detail</i> and <i>Two Point Hospital</i>.</p>"
+	},{
+		name : "A Dog at the Beach",
+		platform : "GameMaker Studio",
+		dir : "ADogAtTheBeach",
+		authors : [ "Georgio Klironomos", "Terrence Dubois", "Milo Lynch" ],
+		showSourceDownload : false,
+		description : ""
+	},{
+		name : "Stretched Thin",
+		platform : "Construct",
+		dir : "StretchedThin",
+		authors : [ "Lauren Fowlkes" ],
+		showSourceDownload : false,
+		description : "<p>A simple simulation roleplay game in which you play as a single mother working a minimum wage office job, trying to make ends meet while keeping her two sons happy and healthy.</p><p>Hint: Going to work subtracts 2 health and happiness from each family member, as this will take them past lunch and dinner time and they’ll be hungry and tired. If at any point a family member runs out of health or happiness, or you run out of money, you lose the game.</p><p>Credits: <ul><li><a href='https://ansimuz.itch.io/hazy-urban-landscape'>Hazy urban landscape background</a> by ansimuz</li><li><a href='https://sicklyseraph.itch.io/jeremy-and-martha'>Character sprites</a> by sicklyseraph</li><li><a href='https://www.playonloop.com/2014-music-loops/sacred-temple/'>Sacred Temple music</a></li></ul></p>"
+	},{
+		name : "Instrumental",
+		platform : "Construct",
+		dir : "Instrumental",
+		authors : [ "Jimmy Lujan", "Laura Britt", "Gabrielle Serna" ],
+		showSourceDownload : true,
+		description : "<p>Note: Each level has 9 acorns/geodes/leafs that must be collected along with 3 notes (pressing the A, W, and S keys in the correct order) to go on to the next level. The 3 notes must be played on the top of the colored rocks for your instrument to be \"blessed\" and the door to the next level to open.</p>"
+	},{
+		name : "UGLY",
+		platform : "Construct",
+		dir : "UGLY",
+		authors : [ "Margaret Patrick", "Austin Brägger", "Shun Xu" ],
+		showSourceDownload : false,
+		description : ""
+	},{
+		name : "Roach Redemption",
+		platform : "Construct",
+		dir : "RoachRedemption",
+		authors : [ "Htoo Paing" ],
+		showSourceDownload : false,
+		description : ""
+	},{
+		name : "Some Assembly Required​",
+		platform : "Construct",
+		dir : "SomeAssemblyRequired",
+		authors : [ "Carlos Cisneros", "Cedric Tomaschke" ],
 		showSourceDownload : true,
 		description : ""
 	},{
-		name : "Cat",
-		platform : "Twine",
-		dir : "Cat",
-		authors : [ "Daniel Aughenbaugh" ],
-		showSourceDownload : true,
+		name : "Critter Xing",
+		platform : "Construct",
+		dir : "CritterXing",
+		authors : [ "Daniel Avery", "Katarina Springer" ],
+		showSourceDownload : false,
 		description : ""
 	},{
-		name : "untitled",
+		name : "Fremont",
 		platform : "Twine",
-		dir : "",
+		dir : "Fremont",
 		authors : [ "Katie Moses" ],
 		showSourceDownload : false,
 		description : ""
 	},{
-		name : "Sodas",
+		name : "We could have made them look like anything, but we made them look like us",
 		platform : "Twine",
-		dir : "Sodas",
-		authors : [ "Joel M." ],
-		showSourceDownload : true,
-		description : ""
-	},{
-		name : "Galactic Empires",
-		platform : "Twine",
-		dir : "GalacticEmpires",
-		authors : [ "Brady Moore" ],
-		showSourceDownload : true,
-		description : ""
-	},{
-		name : "Dungeon Rescue",
-		platform : "Twine",
-		dir : "DungeonRescue",
-		authors : [ "Cheryl Kulkarni" ],
-		showSourceDownload : true,
-		description : ""
-	},{
-		name : "untitled",
-		platform : "Twine",
-		dir : "",
+		dir : "WeCouldHaveMadeThemLookLikeAnything",
 		authors : [ "Georgio Klironomos" ],
 		showSourceDownload : true,
-		description : ""
-	},{
-		name : "Stoneface Mountain",
-		platform : "Twine",
-		dir : "StonefaceMountain",
-		authors : [ "Brandon Erickson" ],
-		showSourceDownload : true,
-		description : ""
-	},{
-		name : "Sister Spooky Scandal Storytime",
-		platform : "Twine",
-		dir : "SisterSpookyScandalStorytime",
-		authors : [ "Simran Gunsi" ],
-		showSourceDownload : true,
-		description : ""
-	},{
-		name : "The McBrown Library",
-		platform : "Twine",
-		dir : "McBrownLibrary",
-		authors : [ "Jimmy Lujan" ],
-		showSourceDownload : false,
-		description : ""
-	},{
-		name : "A Little Pain",
-		platform : "Twine",
-		dir : "ALittlePain",
-		authors : [ "Emily Ye" ],
-		showSourceDownload : true,
-		description : ""
-	},{
-		name : "Bitter Pill",
-		platform : "Twine",
-		dir : "BitterPill",
-		authors : [ "Margaret Patrick" ],
-		showSourceDownload : false,
-		description : ""
-	},{
-		name : "untitled",
-		platform : "Twine",
-		dir : "",
-		authors : [ "Charles Advincula" ],
-		showSourceDownload : true,
-		description : ""
-	},{
-		name : "Raining Memory",
-		platform : "Twine",
-		dir : "RainingMemory",
-		authors : [ "Fion Kwok" ],
-		showSourceDownload : true,
-		description : ""
-	},{
-		name : "untitled",
-		platform : "Twine",
-		dir : "QuanGao",
-		authors : [ "Quan Gao" ],
-		showSourceDownload : true,
-		description : ""
-	},{
-		name : "Treasure Cave",
-		platform : "Twine",
-		dir : "TreasureCave",
-		authors : [ "Teng Ma" ],
-		showSourceDownload : false,
 		description : ""
 	}
 ];

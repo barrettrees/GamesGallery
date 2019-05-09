@@ -24,7 +24,13 @@ authorfields = ("name", "website", "itch", "twitter", "instagram", "linkedin", "
 
 def writeGameHTML (game) : 
 
-	htmlfile = open( game['dir'] + '/index.html', 'w')
+	try: 
+		# File exists
+		htmlfile = open( game['dir'] + '/index.html', 'w')
+    	
+	except IOError:
+    	# File doesn't exist yet
+		htmlfile = open( game['dir'] + '/index.html', 'w+')
 
 	html = """
 	<!DOCTYPE html>

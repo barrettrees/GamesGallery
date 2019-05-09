@@ -1,6 +1,7 @@
  
 body {
 	/*margin-top: 100px;*/
+	font-size: 20px;
 	margin: auto;
 	display: flex;
 	flex-direction: column;
@@ -28,7 +29,9 @@ div.game-info {
 	background-color: white;
 	box-shadow: 0px 0px 50px lightgrey;
 }
-.game-description {}
+#game-description {
+	line-height: 1.4
+}
 img.game-img {
 	width: 100%;
 	/*margin: 10px 0px;*/

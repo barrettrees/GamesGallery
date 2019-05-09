@@ -23,8 +23,13 @@ h1	{
 p {
 	margin: 20px 10%;
 }
+.column-container {
+	column-width: 400px;
+	padding: 3px;
+}
 #game-container>a {
-	width: 400px;
+	margin: 0px 3px;
+	break-inside: avoid;
 }
 .game-card {
 	break-inside: avoid;
