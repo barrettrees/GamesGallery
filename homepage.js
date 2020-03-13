@@ -45,20 +45,20 @@ $(window).on ("load", function () {
     makeGameCards();
     DataWrangler.init();
 
-    let magicGrid = new MagicGrid({
-		container: "#game-container", // Required. Can be a class, id, or an HTMLElement.
-		items: 35, // Required for dynamic content.
-		animate: true, // Optional.
-	});
+ //    let magicGrid = new MagicGrid({
+	// 	container: "#game-container", // Required. Can be a class, id, or an HTMLElement.
+	// 	items: 35, // Required for dynamic content.
+	// 	animate: true, // Optional.
+	// });
 
-	magicGrid.listen();
-	magicGrid.positionItems();
+	// magicGrid.listen();
+	// magicGrid.positionItems();
 
-	$('#game-container').imagesLoaded()
-  		.always( function( instance ) {
-    		magicGrid.listen();
-			magicGrid.positionItems();
-  		})
+	// $('#game-container').imagesLoaded()
+ //  		.always( function( instance ) {
+ //    		magicGrid.listen();
+	// 		magicGrid.positionItems();
+ //  		})
 
 });
 
