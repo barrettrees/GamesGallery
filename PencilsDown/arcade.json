@@ -1,0 +1,39 @@
+{
+	"name": "Pencils Down",
+	"version": "1.0.0.0",
+	"description": "",
+	"id": "",
+	"unique-id": "q6rad2w6s3t",
+	"viewport-width": 640,
+	"viewport-height": 360,
+	"author": "",
+	"email": "",
+	"website": "",
+	"orientations": "landscape",
+	"c2version": "244",
+	"c3version": "r189.2",
+	"ife": false,
+	"used-plugins": [
+		"Spritefont2",
+		"Keyboard",
+		"Sprite",
+		"Tilemap",
+		"Audio",
+		"TiledBg",
+		"Text"
+	],
+	"used-behaviors": [
+		"wrap",
+		"Flash",
+		"custom",
+		"Persist",
+		"bound",
+		"EightDir",
+		"solid",
+		"scrollto",
+		"TileMovement",
+		"Anchor",
+		"Pin",
+		"LOS"
+	]
+}
