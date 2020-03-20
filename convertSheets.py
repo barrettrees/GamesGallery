@@ -3,6 +3,7 @@
 # author: Melanie Dickinson
 # April 2019
 # Python 2.7
+# Modified by Barrett Anderson March 2020
 
 # Given two CSV files, games.csv and authors.csv, generated from Google Sheets, 
 # (1) 	Create a Javascript file with a 'games' variable for info about each game on the website,
@@ -17,7 +18,7 @@ jsfile = open('data.js', 'w')
 
 # Column names in each of the CSV files
 # Last 3 columns named in this list aren't used; they're just for humans to make notes to themselves while compiling the games
-gamefields = ("name", "platform", "author1", "author2", "author3", "dir", "description", "showSourceDownload", "haveGame", "todo", "notes") 
+gamefields = ("name", "platform", "author1", "author2", "author3", "dir", "description", "showSourceDownload","showPlayButton" , "haveGame", "todo", "notes", "youtube_link") 
 # Last column isn't used
 authorfields = ("name", "website", "itch", "twitter", "instagram", "linkedin", "email", "youtube", "notes")
 
@@ -32,64 +33,129 @@ def writeGameHTML (game) :
     	# File doesn't exist yet
 		htmlfile = open( game['dir'] + '/index.html', 'w+')
 
-	html = """
-	<!DOCTYPE html>
-	<html lang="en">
-	
-	  <head>
-	    <meta charset="utf-8">
-	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	    <!-- Helps scale the page better on smaller screens-->
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
-	    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-	    <meta name="description" content="Info page for a game created in CMPM 80K at UCSC">
-	    <meta name="author" content="Melanie Dickinson">
-	
-	    <link rel="icon" href="../icons/favicon.ico" sizes="16x16">
-	
-	    <!-- Fonts -->
-        <link rel='stylesheet' type='text/css' href="https://fonts.googleapis.com/css?family=Wire+One">
-	    <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Abel'>
-	    <link rel='stylesheet' type='text/css' href="https://fonts.googleapis.com/css?family=Barlow+Condensed:300">
-	    <link rel='stylesheet' type='text/css' href="https://fonts.googleapis.com/css?family=News+Cycle">
-	  
-	    <!-- CSS -->
-	    <link rel="stylesheet" href="../style.css">
-	    <link rel="stylesheet" href="../style-gamepage.css">
-	
-	    <!-- Libraries --> 
-	    <script type="text/javascript" src="../lib/jquery-3.0.0.min.js"></script>
-	    <script type="text/javascript" src="../lib/loki.js"></script>
-	
-	    <!-- JS -->
-	    <script type="text/javascript" src="../data.js"></script>
-	    <script type="text/javascript" src="../DataWrangler.js"></script>
-	    <script type="text/javascript" src="../gamepage.js"></script>
+	if len(game['youtube_link'])>0:
 
-	  </head>
-	
-	  <body onload="makeGamePage('""" + game['name'] + """')">
-	
-	    <div class="game-info">
-	        
-	        <img src="screenshot.png" class="game-img">
-	
-	        <h1 class="game-title"></h1>
-	
-	        <a class="button play" href="play.html" target="_blank">PLAY &#8250;</a>
-	        <a download href='""" + game['dir'] + """.c3p' class="button download">Download Source (.c3p)</a> 
-	
-	        <div class="byline"></div>
+		html = """
+		<!DOCTYPE html>
+		<html lang="en">
+		
+		  <head>
+		    <meta charset="utf-8">
+		    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		    <!-- Helps scale the page better on smaller screens-->
+		    <meta name="viewport" content="width=device-width, initial-scale=1">
+		    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		    <meta name="description" content="Info page for a game created in CMPM 80K at UCSC">
+		    <meta name="author" content="Melanie Dickinson">
+		
+		    <link rel="icon" href="../icons/favicon.ico" sizes="16x16">
+		
+		    <!-- Fonts -->
+	        <link rel='stylesheet' type='text/css' href="https://fonts.googleapis.com/css?family=Wire+One">
+		    <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Abel'>
+		    <link rel='stylesheet' type='text/css' href="https://fonts.googleapis.com/css?family=Barlow+Condensed:300">
+		    <link rel='stylesheet' type='text/css' href="https://fonts.googleapis.com/css?family=News+Cycle">
+		  
+		    <!-- CSS -->
+		    <link rel="stylesheet" href="../style.css">
+		    <link rel="stylesheet" href="../style-gamepage.css">
+		
+		    <!-- Libraries --> 
+		    <script type="text/javascript" src="../lib/jquery-3.0.0.min.js"></script>
+		    <script type="text/javascript" src="../lib/loki.js"></script>
+		
+		    <!-- JS -->
+		    <script type="text/javascript" src="../data.js"></script>
+		    <script type="text/javascript" src="../DataWrangler.js"></script>
+		    <script type="text/javascript" src="../gamepage.js"></script>
 
-	        <div id="game-description"></div>
-	
-	        <a href="../index.html" class="back">&#8249; Back</a>
-	
-	      </div>
-	  </body>
-	
-	</html>
-	"""
+		  </head>
+		
+		  <body onload="makeGamePage('""" + game['name'] + """')">
+		
+		    <div class="game-info">
+			<iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/""" + game['youtube_link'] + """" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			
+	<!-- 		<img src="screenshot.png" class="game-img"> -->
+
+
+		        <h1 class="game-title"></h1>
+		
+		        <a class="button play" href="play.html" target="_blank">PLAY &#8250;</a>
+		        <a download href='""" + game['dir'] + """.zip' class="button download">Download Source</a> 
+		
+		        <div class="byline"></div>
+
+		        <div id="game-description"></div>
+		
+		        <a href="../index.html" class="back">&#8249; Back</a>
+		
+		      </div>
+		  </body>
+		
+		</html>
+		"""
+
+	else:
+		html = """
+		<!DOCTYPE html>
+		<html lang="en">
+		
+		  <head>
+		    <meta charset="utf-8">
+		    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		    <!-- Helps scale the page better on smaller screens-->
+		    <meta name="viewport" content="width=device-width, initial-scale=1">
+		    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		    <meta name="description" content="Info page for a game created in CMPM 80K at UCSC">
+		    <meta name="author" content="Melanie Dickinson">
+		
+		    <link rel="icon" href="../icons/favicon.ico" sizes="16x16">
+		
+		    <!-- Fonts -->
+	        <link rel='stylesheet' type='text/css' href="https://fonts.googleapis.com/css?family=Wire+One">
+		    <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Abel'>
+		    <link rel='stylesheet' type='text/css' href="https://fonts.googleapis.com/css?family=Barlow+Condensed:300">
+		    <link rel='stylesheet' type='text/css' href="https://fonts.googleapis.com/css?family=News+Cycle">
+		  
+		    <!-- CSS -->
+		    <link rel="stylesheet" href="../style.css">
+		    <link rel="stylesheet" href="../style-gamepage.css">
+		
+		    <!-- Libraries --> 
+		    <script type="text/javascript" src="../lib/jquery-3.0.0.min.js"></script>
+		    <script type="text/javascript" src="../lib/loki.js"></script>
+		
+		    <!-- JS -->
+		    <script type="text/javascript" src="../data.js"></script>
+		    <script type="text/javascript" src="../DataWrangler.js"></script>
+		    <script type="text/javascript" src="../gamepage.js"></script>
+
+		  </head>
+		
+		  <body onload="makeGamePage('""" + game['name'] + """')">
+		
+		    <div class="game-info">
+			
+				<img src="screenshot.png" class="game-img"> 
+
+		        <h1 class="game-title"></h1>
+		
+		        <a class="button play" href="play.html" target="_blank">PLAY &#8250;</a>
+		        <a download href='""" + game['dir'] + """.zip' class="button download">Download Source</a> 
+		
+		        <div class="byline"></div>
+
+		        <div id="game-description"></div>
+		
+		        <a href="../index.html" class="back">&#8249; Back</a>
+		
+		      </div>
+		  </body>
+		
+		</html>
+		"""
+
 	htmlfile.write(html)
 
 def makeAuthorsString (row) :
@@ -115,6 +181,7 @@ def writeOneGame (row) :
 				 'platform : "' 			+ row['platform'] + '"',
 				 'dir : "' 					+ row['dir'] + '"',
 				 'authors : [ '				+ makeAuthorsString(row) + ' ]',
+				 'showPlayButton : ' 	+ ( 'true' if row['showPlayButton'] == 'yes' else 'false' ), # no quotes around value
 				 'showSourceDownload : ' 	+ ( 'true' if row['showSourceDownload'] == 'yes' else 'false' ), # no quotes around value
 				 'description : "'			+ row['description'] + '"'
 				)
