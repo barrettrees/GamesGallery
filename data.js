@@ -15,7 +15,7 @@ var games = [
 		authors : [ "Oliver Berggren" ],
 		showPlayButton : true,
 		showSourceDownload : true,
-		description : "<p>\'In an Orderly Fashion\' is Mexican-American's immigration simulation game. You, the player, are a law-abiding citizen trying to cross the border between Tijuana and San Diego. Gameplay is random, and much of it's out of your control: it changes depending on the guards\' racism, the border's security level, your anxiety, your ethnicity, your appearance, and so forth. You have a variety of possible responses, based on constitutional rights, your self-respect, your personal background, and more. All of these responses may or may not help you cross. As you talk to immigration authorities, check your privilege: it will open and close certain doors.</p>"
+		description : "<p>The  border-crossing experience from Mexico to America.</p>"
 	},{
 		name : "Ezelia\'s Elaborate Escape",
 		platform : "Twine",
@@ -55,7 +55,7 @@ var games = [
 		authors : [ "Sam Feng", "Jose Salas" ],
 		showPlayButton : true,
 		showSourceDownload : true,
-		description : "<p>Queen of the Oils is a strategic, fast-paced, tabletop game delving into the management of land resources in the competition for dominance over the oil industry.</p>"
+		description : "<p>Queen of the Oils is a strategic, fast paced, table top game delving into the management of land resources in the competition for dominance over the oil industry.</p>"
 	},{
 		name : "The Perfect Gift",
 		platform : "Twine",
@@ -63,7 +63,7 @@ var games = [
 		authors : [ "Sam Feng" ],
 		showPlayButton : true,
 		showSourceDownload : true,
-		description : "<p>You are a normal college student, and you have to go around town to find the perfect birthday gift for the girl you crushed on...</p>"
+		description : "<p>The perfect gift is a comedy visual novel about a boy trying to get a gift for the girl he fell in love with.</p>"
 	},{
 		name : "A Long Way Home",
 		platform : "Bitsy",
@@ -71,15 +71,15 @@ var games = [
 		authors : [ "Alicia Zhen", "Brandon Kharaka", "Joann Marie Wong" ],
 		showPlayButton : true,
 		showSourceDownload : true,
-		description : "<p>A game about a lost cat who must find their way home.</p>"
+		description : "<p>Our game is about a lost cat who must find their way home. The story is that you’re an outdoor can who was let out of the house to roam one evening. Upon leaving the house, the cat finds a butterfly and starts chasing it all around the neighborhood. Eventually, the cat loses its way home and must find a way back.</p>"
 	},{
-		name : "Birds aren\'t Real",
+		name : "Birds Aren\'t Real",
 		platform : "Godot",
 		dir : "BirdsArentReal",
 		authors : [ "Jameson Danning", "Colin Watterson" ],
 		showPlayButton : true,
 		showSourceDownload : true,
-		description : "<p>Control a \'bird\' (government spy drone) and listen in on your fellow citizen's private conversations! Explore the park, listen carefully, and report any suspicious behavior!<p>"
+		description : "<p>Control a 'bird' (government spy drone) and listen in on your fellow citizen's private conversations! Explore the park, listen carefully, and report any suspicious behavior!<p>"
 	},{
 		name : "Le Correspondant Perdu",
 		platform : "Twine",
@@ -95,7 +95,7 @@ var games = [
 		authors : [ "Nathann Latimore" ],
 		showPlayButton : true,
 		showSourceDownload : true,
-		description : "<p>You\'ve stumbled across a dirty photograph of you and your dad. As you try to scratch the markings away, you realize that you\'re having trouble remembering his face. This should be easy, right? The funeral was a while ago, but, if anything, this should be something simple to remember. In \"Distance\", a text-based hyper-link game, you traverse the interconnected pathways of your memory by uncovering moments that shine a light on special times with your family, all in an attempt to rediscover your father\'s smile.</p>"
+		description : "<p>In Distance, a link based game created by Nathann Latimore, the player gets to explore how far love travels by literally traversing the interconnected memories of their character, who has, unfortunately, had something fade from her mind that she thought she could never forget: the smiling face of her father, who has sadly passed away.</p>"
 	},{
 		name : "Nothing or Another",
 		platform : "Twine",
@@ -119,7 +119,7 @@ var games = [
 		authors : [ "Isaac Tremble-Pederson" ],
 		showPlayButton : true,
 		showSourceDownload : true,
-		description : "<p>A detective receives a tip about disappearances in the town of Violet, and arrives to a deserted town, with only the Church standing. Can he solve the disappearances, and what secrets will he discover in the Church?</p>"
+		description : "<p>You're sitting in your office when you find the case of a lifetime. The case of your career. The case of your past. The town of Violet has reported disappearances relating to a local church. Can you discover the truth about the disappearances and the town? Or will you find something else entirely?</p>"
 	},{
 		name : "Spy Story",
 		platform : "Twine",
@@ -127,7 +127,7 @@ var games = [
 		authors : [ "Nathan Ma" ],
 		showPlayButton : true,
 		showSourceDownload : true,
-		description : "<p>A link-based game where the player is a spy attempting to infiltrate an enemy base. Players will solve puzzles in order to progress.</p>"
+		description : "<p>A linked-based, puzzle game with a heavy spy theme.</p>"
 	},{
 		name : "Cocopan Chase",
 		platform : "Analog",
@@ -142,8 +142,8 @@ var games = [
 		dir : "HopHopDonut",
 		authors : [ "Sam Feng", "Jose Salas" ],
 		showPlayButton : true,
-		showSourceDownload : true,
-		description : "<p>Hop Hop Donut is a pixel 2D platformer where the player is the main character, Donut, a Welsh Corgi in search of their human owner who has been kidnapped by a band of house cats.</p>"
+		showSourceDownload : false,
+		description : "<p>Donut the corgi had his owner kidnapped by an evil band of cats who envy the peace between humans and dogs, but luckily they aren’t too bright. So, strap on your balloons with Donut and take to the skies, battling enemy critters in search of your beloved owner and find who is behind this nasty plot.</p>"
 	},{
 		name : "The Hangover Night",
 		platform : "Bitsy",
@@ -151,7 +151,7 @@ var games = [
 		authors : [ "Changlin Yang", "Zhifeng Lu" ],
 		showPlayButton : true,
 		showSourceDownload : true,
-		description : "<p>The main character of the game is Paul. Paul and his friends (George, Chris, and etc.) had a birthday party in their house. That night Paul, George, and Chris drank a lot and then fell asleep in the cluttered room. The next morning, however, Paul received a reminder from his phone that he needed to fly to another city for the interview. When Paul woke up and realized he wouldn't be able to get to the airport in time, he found that the gate to the house wouldn\'t open and he couldn't find the key to open the gate. He guessed that the key must have been lost somewhere last night, but he had drunk too much to remember. The only people he could turn to were his still comatose friends, George and Chris. While George and Chris were still unconscious, Paul hoped to recall the keys in their confused words, open the house gate, and head to the airport for the interview.</p>"
+		description : "<p>Player has been invited to a party before the day when he needs to take a flight to another city for an interview. And he found out that the gate is locked, so he needs to recall the memory about the party last night, and finds the key of the gate to leave the house.</p>"
 	},{
 		name : "Discovery",
 		platform : "Godot",
@@ -175,7 +175,7 @@ var games = [
 		authors : [ "Niccolo Abate", "Tate Pieper" ],
 		showPlayButton : true,
 		showSourceDownload : true,
-		description : "<p>In this game about coming to terms with your life / giving up on dreams and being content, enter the world of a little optimistic fish living in a fishtank, but thinking he is living in the ocean. Explore the pretty, interesting world of ocean/fishtank and unfold the story in your own personal way, seeing how the space changes as well.</p>"
+		description : "<p>Calming Pressures is an atmospheric story game about a young, ambitious fish, excited to find his dreams in the endless oceans. But when he ventures out and explores his world, he finds it to be small and caged in glass. He is in a fishtank.</p>"
 	},{
 		name : "Mindscape",
 		platform : "Bitsy",
@@ -183,7 +183,7 @@ var games = [
 		authors : [ "Enrico Widodo", "Jess Wake" ],
 		showPlayButton : true,
 		showSourceDownload : true,
-		description : "<p>Mindscape is a game about exploring the worlds that humans create within our minds. It is also about coping with the nature of fiction, and attachment to characters and events who aren't \"real.\"</p>"
+		description : "<p>A Game About Fiction</p>"
 	},{
 		name : "Pencils Down",
 		platform : "Construct",
@@ -191,7 +191,15 @@ var games = [
 		authors : [ "Ashley Lu", "Isabelle Wong" ],
 		showPlayButton : true,
 		showSourceDownload : true,
-		description : "<p>Tomorrow's exam totally slipped your mind... You go to bed and your worries manifest themselves into your dream as an RPG-style short game. You dream of taking the test but it's not the written test you were imagining.</p>"
+		description : "<p>Pencils Down is an RPG-styled game centered around test-taking. Through an expansive approach to RPG games, the game portrays taking a test as a dungeon. The main character forgets that he has an exam the next day and so he goes to bed, taking all of his anxiety and concerns with him. </p>"
+	},{
+		name : "Dead A Live",
+		platform : "Godot",
+		dir : "DeadALive",
+		authors : [ "Sam Nguyen", "Victor Chung", "Tim D'Amore" ],
+		showPlayButton : true,
+		showSourceDownload : true,
+		description : "<p> Dead A Live is a horror, thriller, RPG game made with Godot. The player plays as a janitor who is working within a normal hospital at night. However, the janitor has accidentally taken some hallucinogens and starts seeing the hospital as a very frightening atmosphere. Even though the player perceives the visuals as scary, in reality its not. The player must navigate through a series of hallways and rooms while avoiding monsters to find an exit point. The player can interact with doors and has a rechargeable flashlight to observe their surroundings better. </p>"
 	}
 ];
 
@@ -199,8 +207,8 @@ var authors = [
 	{
 		name : "Alicia Zhen",
 		itch : "https://sad-boi-hours.itch.io/",
-		twitter : "@yukidesoo",
-		instagram : "@wallflower.png & @yukidesoo",
+		twitter : "yukidesoo",
+		instagram : "wallflower.png & @yukidesoo",
 		linkedin : "https://www.linkedin.com/in/alicia-zhen-466b8119b/",
 		email : "zhenalicia@gmail.com"
 	},{
@@ -236,7 +244,7 @@ var authors = [
 		name : "Jameson Danning",
 		website : "https://jdanning.myportfolio.com/",
 		itch : "https://jamesondanning.itch.io/",
-		instagram : "@bigboijamo",
+		instagram : "bigboijamo",
 		linkedin : "https://www.linkedin.com/in/jameson-danning-418440193/",
 		email : "jdanning@ucsc.edu"
 	},{
@@ -277,8 +285,8 @@ var authors = [
 		name : "Nathan Ma"
 	},{
 		name : "Nathann Latimore",
-		twitter : "@Sonar_101",
-		instagram : "@sonar101",
+		twitter : "Sonar_101",
+		instagram : "sonar101",
 		youtube : "https://www.youtube.com/channel/UCLAU14RVIQezSmvyAwXZRxA",
 		email : "N.Latimore1013@gmail.com"
 	},{
@@ -291,5 +299,11 @@ var authors = [
 		name : "Tate Pieper"
 	},{
 		name : "Zhifeng Lu"
+	},{
+		name : "Sam Nguyen"
+	},{
+		name : "Victor Chung"
+	},{
+		name : "Tim D'Amore"
 	}
 ];
