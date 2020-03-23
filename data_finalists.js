@@ -87,7 +87,7 @@ var games = [
 		authors : [ "Sam Feng", "Jose Salas" ],
 		showPlayButton : true,
 		showSourceDownload : false,
-		description : "<p>Donut the corgi had his owner kidnapped by an evil band of cats who envy the peace between humans and dogs, but luckily they aren’t too bright. So, strap on your balloons with Donut and take to the skies, battling enemy critters in search of your beloved owner and find who is behind this nasty plot.</p>"
+		description : "<p>Donut the corgi had his owner kidnapped by an evil band of cats who envy the peace between humans and dogs, but luckily they aren't too bright. So, strap on your balloons with Donut and take to the skies, battling enemy critters in search of your beloved owner and find who is behind this nasty plot.</p>"
 	},{
 		name : "Discovery",
 		platform : "Godot",
